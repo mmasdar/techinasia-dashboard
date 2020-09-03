@@ -17,7 +17,8 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 from datetime import datetime
 
-data_1 = pd.read_csv('converted_articles.csv')
+data_1 = pd.read_csv('https://raw.githubusercontent.com/mmasdar/techinasia-dashboard/tree/master/assets/converted_articles.csv', sep=",")
+
 
 data_1.loc[data_1.parent_categories == 'null']
 data_1_1 = data_1.parent_categories.value_counts().tolist()
