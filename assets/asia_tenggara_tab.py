@@ -11,8 +11,7 @@ import dash
 import base64
 import dash_html_components as html
 
-
-test_png = 'Cohort-Analysis.png'
+test_png = 'https://raw.githubusercontent.com/mmasdar/techinasia-dashboard/master/assets/Cohort-Analysis.png'
 test_base64 = base64.b64encode(open(test_png, 'rb').read()).decode('ascii')
 
 colors = {
